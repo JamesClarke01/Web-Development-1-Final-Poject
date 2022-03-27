@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Half-Life 2 | Valve's Innovation Through Games</title>
+
+    <meta charset="utf-8" />
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--JavsScript Script-->
+    <script src="Assets/Scripts/script.js"></script>
+
+    <!--sets viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Description-->
+    <meta name = "description" content = "This page gives information on the video game Half-Life 2 created by Valve Software, and the innovations it brought to the video game industry">
+
+    <!--Keywords-->
+    <meta name = "keywords" content = "Valve Software, Half-Life, Half-Life 2, Half-Life: Alyx, videogames">
+</head>
+
+
+
+<body id="hl2" onload="changeChar(0)">
+
+    <div id="main" class="container">
+
+        <div>
+            <header>
+                <div class = "row">
+                    <img src="Assets/Images/valve-logocrop.jpg" class="banner img-fluid" alt = "Valve Software Logo">
+                </div>
+                <nav>
+                    <ul class = "navBar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="hl.html">Half-Life</a></li>
+                        <li><a href="hl2.html">Half-Life 2</a></li>
+                        <li><a href="hlAlyx.html">Half-Life: Alyx</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <hr class = "hrDefault">
+
+        <div class="row">
+            <div class="mx-auto text-center">
+                <h1 class="headings">
+                    Half-Life 2
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="textP">
+                With a game as big as Half-Life a sequel was almost inevitable and Valve definetly delivered on people’s high expectations
+                with ‘Half-Life 2’ being a game that once again blew away its competition with all new cutting edge graphics,
+                real-time
+                physics and unique environments and characters, all wrapped up in a compelling narrative of freeing
+                the
+                earth from alien captors.
+            </p>
+        </div>
+
+
+        <div class="row  justify-content-center">
+
+            <div class="embed-responsive embed-responsive-16by9 col-8">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UKA7JkV51Jw"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+        <hr class = "hrDefault">
+
+        <div class="row">
+            <div class="mx-auto text-center">
+                <h1 class="headings">The Characters</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-around">
+            <p class="textP col-md-5">
+                The Half-Life sequel greatly innovated on its predecessor. The graphics and animations improved greatly
+                over the six short years. A big selling point was that the improved graphical technologies and increased budget allowed for many varied and interesting characters for the player to interact with in the game. On the right you can view a fact file of some interesting charaters.
+            </p>
+
+            <!--Fact File-->
+            <div class="col-md-4">
+                <div class="factFile container">
+
+                <div class="row">
+                    <img src="Assets/Images/gordon.jpg" id="charImg" class="factImage img-fluid" alt = "Image of the current character being viewed">
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6 factName factItem">
+                        <p class = "factText" >Name</p>
+                    </div>
+
+                    <div class="col-md-6 factValue factItem">
+                        <p  class = "factText" id="charName"></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 factName factItem">
+                        <p class = "factText" >Age</p>
+                    </div>
+
+                    <div class="col-md-6 factValue factItem">
+                        <p class = "factText"  id="charAge"></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 factName factItem">
+                        <p class = "factText" >Role</p>
+                    </div>
+
+                    <div class="col-md-6 factValue factItem">
+                        <p class = "factText"  id="charRole"></p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around">
+                    <div class = "col-md-4 ">
+                        <button class = "factButton" onclick="changeChar(-1);">Back</button>
+                    </div>
+
+                    <div class = "col-md-4">
+                        <button class = "factButton" onclick="changeChar(1);">Next</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class = "hrDefault">
+
+        <div class="row">
+            <div class="mx-auto text-center">
+                <h1 class="headings">The Innovations</h1>
+            </div>
+        </div>
+        
+        <div class="row justify-content-around">
+
+            <div class="col-md-6">
+                <img src="Assets/Images/gravityGun.gif" class="pageImage"  alt = "GIF demonstrating the gameplay of Half-Life 2">
+            </div>
+
+            <div class="col-md-6">
+                <p class="textP">
+                    Half Life 2’s main technical focus was real-time physics, as a game featuring and revolving around
+                    a complex physics simulation hadn’t been achieved yet. The way the game is designed does a lot to emphasise
+                    this focus on physics with the player being given a ‘Gravity Gun’ that allows them to pick up objects in the
+                    environment and throw them at enemies.
+                </p>
+            </div>
+
+        </div>
+
+        <p class="textP">
+            Now almost all games utilise real time physics with objects in game, so this is another experimental
+            innovation by Valve that ended up influencing the videogame industry as a whole.
+        </p>
+
+        <div class="row justify-content-around">
+            <div class="col-md-6">
+                <p class="textP">
+                    In order to give updates to their games after they released, Valve developed the digital
+                    distribution
+                    service ‘Steam’, and Half-Life 2 was the first game they made that required the user to install Steam
+                    before
+                    it could be played. Steam has now grown into a multi-billion dollar digital distribution service and
+                    is
+                    the
+                    main service people use for purchasing video games for PCs.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="Assets/Images/steam.jpg" class="pageImage" alt = "Steam Logo">
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="footer-copyright text-center py-3">
+            James Clarke © 2020
+        </div>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>

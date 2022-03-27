@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Conract Us | Valve's Innovation through Games</title>
+
+    <meta charset="utf-8" />
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--JavsScript Script-->
+    <script src="Assets/Scripts/script.js"></script>
+
+    <!--sets viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Description-->
+    <meta name = "description" content = "This page allows you to contact the creator of the 'Valve's Innovation through Games site'">
+
+    <!--Keywords-->
+    <meta name = "keywords" content = "Valve Software, Half-Life, Half-Life 2, Half-Life: Alyx, videogames">
+</head>
+
+
+
+<body id="portal">
+
+    <div id="main" class="container">
+
+        <header>
+            <div class="row">
+                <img src="Assets/Images/valve-logocrop.jpg" class="banner img-fluid" alt = "Valve Software Logo">
+            </div>
+            <nav>
+                <ul class = "navBar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hl.html">Half-Life</a></li>
+                    <li><a href="hl2.html">Half-Life 2</a></li>
+                    <li><a href="hlAlyx.html">Half-Life: Alyx</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr class = "hrDefault">
+
+        <div class="row">
+            <div class="mx-auto text-center">
+                <h1 class="headings">
+                    Send us a message!
+                </h1>
+            </div>
+        </div>
+
+        <p class="textP">
+            If you have any queries about our website or simply want to find out more about the games we like, feel free
+            to send us a message below!
+        </p>
+
+
+        <form action="#" class="form-check" name="contactForm" onsubmit="return(validate());">
+
+            <div class="form-group">
+                <h2>First name:</h2>
+                <input class="form-control textBox" type="text" name="fname">
+                <span class="errorMessage" id="fnameError"></span>
+            </div>
+            
+            <br>
+
+            <div class="form-group">
+                <h2>Last name:</h2>
+                <input class="form-control" type="text" name="lname">
+                <span class="errorMessage" id="lnameError"></span>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <h2>Email:</h2>
+                <input class="form-control" type="text" name="email">
+                <span class="errorMessage" id="emailError"></span>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <h2>Please select your gender:</h2>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="male" name="gender"
+                        value="male">
+                    <label class="form-check-label contactLabel" for="male">Male </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+                    <label class="form-check-label contactLabel" for="female">Female </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="CheckOther" name="gender" value="other">
+                    <label class="form-check-label contactLabel" for="CheckOther">Prefer not to say </label>
+                </div>
+
+                <span class="errorMessage" id="genderError"></span>
+
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <h2>What device did you view this website on? </h2>
+
+                <div class="dropdown">
+
+                    <select class="form-control" name="devices">
+                        <option value="default">--Please Select--</option>
+                        <option value="computer">Computer/Laptop</option>
+                        <option value="phone">Smartphone</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="fridge">Smart Fridge</option>
+                    </select>
+
+                </div>
+
+                <span class="errorMessage" id="selectError"></span><br>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <h2>What games are you interested in hearing more about?</h2>
+                <p class = "contactLabel"> (optional)</p>
+                <div class="form-check">
+                    <input type="checkbox" id="hl1" name="game" value="hl1">
+                    <label class="label contactLabel">Half-Life (1999) </label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" id="hl2" name="game" value="hl2">
+                    <label class="label contactLabel">Half-Life 2 </label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" id="hlAlyx" name="game" value="hlAlyx">
+                    <label class="label contactLabel">Half-Lie: Alyx </label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" id="GroupOther" name="game" value="other">
+                    <label class="label contactLabel"> Other </label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <h2>Comment</h2>
+                <textarea class="form-control" id="comment" name="commment"></textarea>
+                <span class="errorMessage" id="commentError"></span><br>
+            </div>
+
+            
+
+            <button type="submit" class="btn btn-primary btn-lg submitButton">Submit</button>
+
+        </form>
+
+        <footer class="page-footer">
+            <div class="footer-copyright text-center py-3">
+                James Clarke © 2020
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

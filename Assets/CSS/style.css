@@ -1,0 +1,234 @@
+/*Page Backgrounds*/
+
+#index {
+    background-image: url("../Images/hlalyxbackground.jpg");
+}
+
+#hl1 {
+    background-image: url("../Images/Test_chamber.jpg");
+}
+
+#hl2 {
+    background-image: url("../Images/plaza.jpg")
+}
+
+#portal {
+    background-image: url("../Images/portal.jpg");
+}
+
+#alyx {
+    background-image: url("../Images/alyxbackground.jpg");
+}
+
+/*General Page Stylings*/
+
+html {
+    font-size: 100%;
+}
+
+.banner {
+    height: 50%;
+}
+
+#main {
+    background-color: gray;
+    opacity: 0.95;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.headings {
+    color: darkslategray;
+    margin-bottom: 2vh;
+    font-weight: bold;
+}
+
+.pageImage {
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+    padding: 1vw;
+}
+
+.textP {
+    margin: 3vh;
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: darkslategray;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.hrDefault {
+    border-top: 2px solid #546f6f;
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+
+/*Nav Bar */
+
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkslategray;
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+.navBar li {
+    float: left;
+}
+
+.navBar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navBar li a:hover {
+    background-color: gray;
+}
+
+
+/*Interactive "Game box" Menu*/
+
+.boxContainer {
+    background-color: darkslategray;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.gameBox {
+    background-color: darkslategray;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 25px;
+    padding: 2.5%;
+}
+
+.containerImage {
+    display: block;
+    margin: auto;
+}
+
+/*Fact File */
+
+.factFile {
+    background-color: #3d6363;
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.factItem {
+    border: 0.2rem solid darkslategray;
+    height: 5rem;
+    text-align: center;
+}
+
+.factName {
+    background-color: lightgray;
+    border: 0.15rem solid darkslategray;
+    height: 5rem;
+    text-align: center;
+}
+
+.factValue {
+    background-color: whitesmoke;
+    border: 0.15rem solid darkslategray;
+    height: 5rem;
+    text-align: center;
+}
+
+.factText {
+    font-size: 1.5rem;
+}
+
+.factButton {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: 0.2rem solid #97a13d;
+}
+
+.factButton:hover {
+    background-color: gray;
+}
+
+
+/*Contact Form*/
+
+.errorMessage {
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.submitButton {
+    background-color: #415f5f !important;
+    border-color: darkslategray !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contactLabel {
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+/*Multimedia stylings:/*
+
+/*phones*/
+
+@media screen and (max-width: 699px) and (min-width: 200px) {
+    .textP {
+        font-size: 1.2rem;
+    }
+}
+
+/*tablets*/
+
+@media screen and (max-width: 1249px) and (min-width: 700px) {
+    .textP {
+        font-size: 1.25rem;
+    }
+}
+
+/*Computer screens*/
+
+@media screen and (min-width: 1250px) {
+    .textP {
+        font-size: 1.5rem;
+    }
+}
+
